@@ -35,7 +35,12 @@ export interface ProjectProps {
   summary: string;
   image: string;
   linkPreview?: string;
-  linkSource?: string;
+  linkfront?: string;
+  linkback?: string;
+  img1: string;
+  img2: string;
+  img3: string;
+  img4: string;
 }
 
 export interface AboutProps {

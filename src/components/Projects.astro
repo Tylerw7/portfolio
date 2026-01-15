@@ -12,7 +12,7 @@ const { projects } = Astro.props;
 
 <Section text="Featured Projects" href="projects">
   {
-    projects.map(({ name, summary, image, linkPreview, linkSource }, index) => {
+    projects.map(({ name, summary, image, linkPreview, linkfront, linkback, img1, img2, img3, img4 }, index) => {
       const top = 98 + index * 40;
       return (
         <div
@@ -27,11 +27,18 @@ const { projects } = Astro.props;
               <p class="text-base text-neutral">{summary}</p>
               <div class="flex gap-5 pt-10 text-white">
                 <a
-                  href={linkSource}
+                  href={linkfront}
                   target="_blank"
                   class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
                 >
-                  Source
+                  Frontend
+                </a>
+                <a
+                  href={linkback}
+                  target="_blank"
+                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                >
+                  Backend
                 </a>
                 <a
                   href={linkPreview}
@@ -41,10 +48,42 @@ const { projects } = Astro.props;
                   Preview
                 </a>
               </div>
+              <div class="flex flex-row gap-3">
+
+              
+                <div class="rounded-full bg-white w-[50px] h-[50px] mt-[10px]">
+                  <img 
+                  src={img1}
+                  class="w-full h-full object-cover rounded-full"
+                  alt="JS Logo"
+                   />
+                </div>
+                <div class="rounded-full bg-white w-[50px] h-[50px] mt-[10px]">
+                  <img 
+                  src={img2}
+                  class="w-full h-full object-cover rounded-full"
+                  alt="JS Logo"
+                   />
+                </div>
+                <div class="rounded-full bg-white w-[50px] h-[50px] mt-[10px]">
+                  <img 
+                  src={img3}
+                  class="w-full h-full object-cover rounded-full"
+                  alt="JS Logo"
+                   />
+                </div>
+                <div class="rounded-full bg-white w-[50px] h-[50px] mt-[10px]">
+                  <img 
+                  src={img4}
+                  class="w-full h-full object-cover rounded-full"
+                  alt="JS Logo"
+                   />
+                </div>
+              </div>
             </div>
             <div class="flex items-end justify-end overflow-hidden">
               <Image
-                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-left-top sm:h-[85%] sm:w-full"
+                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-cover object-center sm:h-[85%] sm:w-full"
                 src={image}
                 alt={name}
                 width="736"

@@ -6,6 +6,7 @@ import Experience from "@components/Experience.astro";
 import Projects from "@components/Projects.astro";
 import About from "@components/About.astro";
 
+
 import "../styles/global.css";
 ---
 
@@ -13,5 +14,94 @@ import "../styles/global.css";
   <Hero {...SITE_CONTENT.hero} />
   <Experience experience={SITE_CONTENT.experience} />
   <Projects projects={SITE_CONTENT.projects} />
+  <div>
+    <h3 class="font-serif text-[45px] font-medium text-white">Proficient Skills</h3>
+    <div>
+      
+      
+      <div class="rounded-full bg-white w-[70px] h-[70px] mt-[10px] flex items-center">
+        <img 
+        src="/python_logo.jpeg"
+        class="w-full h-full object-cover rounded-full"
+        alt="Python Logo"
+         />
+         <h3 class="pl-[25px] font-serif text-[35px] font-medium text-white">Python</h3>
+      </div>
+
+      <div class="rounded-full bg-white w-[70px] h-[70px] mt-[10px] flex items-center">
+        <img 
+        src="/fastapi_logo.jpg"
+        class="w-full h-full object-cover rounded-full"
+        alt="fastapi Logo"
+         />
+         <h3 class="pl-[25px] font-serif text-[35px] font-medium text-white">FastAPI</h3>
+      </div>
+
+      <div class="rounded-full bg-white w-[70px] h-[70px] mt-[10px] flex items-center">
+        <img 
+        src="/langchain_logo.png"
+        class="w-full h-full object-cover rounded-full"
+        alt="fastapi Logo"
+         />
+         <h3 class="pl-[25px] font-serif text-[35px] font-medium text-white">Langgraph</h3>
+      </div>
+
+      <div class="flex items-center mt-[10px]">
+        <div class="rounded-full bg-white w-[70px] h-[70px] flex items-center justify-center overflow-hidden">
+          <img 
+            src="/logo_pytorch.png"
+            class="w-full h-full object-cover rounded-full scale-90"
+            alt="Pytorch Logo"
+          />
+        </div>
+        <h3 class="pl-[25px] font-serif text-[35px] font-medium text-white">Pytorch</h3>
+      </div>
+
+      <div class="flex items-center mt-[10px]">
+        <div class="rounded-full bg-white w-[70px] h-[70px] flex items-center justify-center overflow-hidden">
+          <img 
+            src="/typescript_logo.png"
+            class="w-full h-full object-cover rounded-full scale-90"
+            alt="typescript Logo"
+          />
+        </div>
+        <h3 class="pl-[25px] font-serif text-[35px] font-medium text-white">TypeScript</h3>
+      </div>
+
+      <div class="flex items-center mt-[10px]">
+        <div class="rounded-full bg-white w-[70px] h-[70px] flex items-center justify-center overflow-hidden">
+          <img 
+            src="/react_logo.png"
+            class="w-full h-full object-cover rounded-full scale-90"
+            alt="react Logo"
+          />
+        </div>
+        <h3 class="pl-[25px] font-serif text-[35px] font-medium text-white">React</h3>
+      </div>
+
+      <div class="flex items-center mt-[10px]">
+        <div class="rounded-full bg-white w-[70px] h-[70px] flex items-center justify-center overflow-hidden">
+          <img 
+            src="/node_logo.png"
+            class="w-full h-full object-cover rounded-full scale-90"
+            alt="react Logo"
+          />
+        </div>
+        <h3 class="pl-[25px] font-serif text-[35px] font-medium text-white">Node.js</h3>
+      </div>
+
+      <div class="flex items-center mt-[10px]">
+        <div class="rounded-full bg-white w-[70px] h-[70px] flex items-center justify-center overflow-hidden">
+          <img 
+            src="/c++logo.png"
+            class="w-full h-full object-cover rounded-full scale-90"
+            alt="react Logo"
+          />
+        </div>
+        <h3 class="pl-[25px] font-serif text-[35px] font-medium text-white">C++</h3>
+      </div>
+
+    </div>
+  </div>
   <About {...SITE_CONTENT.about} name={SITE_CONTENT.hero.name} />
 </Layout>

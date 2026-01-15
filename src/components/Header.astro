@@ -5,7 +5,7 @@ import type { HeaderProps } from "@types";
 
 type Props = HeaderProps;
 
-const { siteLogo, navLinks } = Astro.props;
+const { navLinks } = Astro.props;
 ---
 
 <header
@@ -14,7 +14,7 @@ const { siteLogo, navLinks } = Astro.props;
   <a href="/" aria-label="Home link">
     <Image
       class="rounded-full"
-      src={siteLogo}
+      src="/Tyler.png"
       width="45"
       height="45"
       alt="website logo"
