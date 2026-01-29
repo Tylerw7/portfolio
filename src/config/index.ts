@@ -89,7 +89,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       name: "E-Comerce Art Store / Admin Dashboard",
       summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "https://www.preciouswettachart.com/",
+      linkPreview: "https://precious-wettach-art.vercel.app/",
       linkback: "https://github.com/Tylerw7/PreciousArtBackEnd",
       linkfront: "https://github.com/Tylerw7/precious-art",
       image: "/precious_art_screenshot.png",
